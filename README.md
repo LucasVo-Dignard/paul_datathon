@@ -60,23 +60,7 @@ Le système utilise **AWS Bedrock** pour l’inférence IA (via des prompts pers
 
 ## Permissions AWS Bedrock (OBLIGATOIRES)
 
-Pour que le serveur fonctionne sur AWS, **l’utilisateur ou le rôle IAM attaché à l’instance EC2** doit disposer des permissions suivantes :
-
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "bedrock:InvokeModel",
-                "bedrock:InvokeModelWithResponseStream"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
-```
+Pour que le serveur fonctionne sur AWS, **l’utilisateur ou le rôle IAM attaché à l’instance EC2** doit disposer des permissions necessaire pour acceder aux modèles Bedrock.
 
 ### Étapes :
 1. Allez dans **IAM → Politiques → Créer une politique**.
@@ -221,16 +205,3 @@ nohup python main.py &
 | Fichier non parsé | Vérifiez format (PDF corrompu, XML malformé) |
 | Port 80 bloqué | Ouvrez-le dans le groupe de sécurité |
 
----
-
-## Contribution
-Fork → Modifiez → PR. Améliorez les prompts, ajoutez un script d’init DB, ou modernisez le frontend.
-
----
-
-## Licence
-MIT
-
----
-
-**PAUL — Transformez la législation en stratégie d’investissement.**
