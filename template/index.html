@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.A.U.L</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div id="header">P.A.U.L.</div>
+    <div id="main">
+        <div id="dropZone">
+            Téléverser un document législatif (pdf, txt, html, ou xml).
+            <input type="file" id="billFile" accept=".pdf,.txt,.html,.xml" />
+        </div>
+    
+        <table id="data">
+            <div id="dataContainer">
+                <tr>
+                    <th>Ticker</th>
+                    <th>Action</th>
+                    <th>Exposure</th>
+                    <th>Justification</th>
+                </tr>
+            </div>
+        </table>
+    </div>
+</body>
+</html>

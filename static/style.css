@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(22, 22, 24);
+    color: white;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header {
+    font-size: 4em;
+    text-align: center;
+    border-bottom: 1px white solid;
+    border-radius: 10px;
+    padding: 1.5vw;
+    width: 97vw;
+    font-weight: 600;
+}
+
+#main {
+    margin-top: 7em;
+    text-align: center;
+}
+
+#dropZone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40em;
+    max-width: 100%;
+    height: 16em;
+    border: 1px solid white;
+    border-radius: 35px;
+    color: rgba(255, 255, 255, 0.772);
+    cursor: pointer;
+    transition: background-color 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#dropZone:hover {
+    background-color: rgb(33, 33, 37);
+}
+
+#billFile {
+    display: none;
+}
+
+table {
+    display: none;
+    font-size: 1.3em;
+    border: 1px white solid;
+    text-align: center;
+}
+
+tr {
+    display: flex;
+    border-bottom: 1px white solid;
+}
+
+table tr:last-child {
+    border-bottom: 0px;
+}
+
+tr th, tr td {
+    border-right: 1px white solid;
+    padding: 1em;
+    width: 6em;
+}
+
+tr th:last-child, tr td:last-child {
+    width: 15em;
+    border-right: 0px;
+}
