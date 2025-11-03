@@ -46,6 +46,10 @@ body {
     display: none;
 }
 
+#summary {
+    display: none;
+}
+
 table {
     display: none;
     font-size: 1.3em;

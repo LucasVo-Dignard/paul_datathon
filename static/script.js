@@ -2,6 +2,7 @@ const billInput = document.getElementById("billFile");
 const dropZone = document.getElementById("dropZone");
 const table = document.getElementById("data");
 const tbody = document.getElementsByTagName("tbody")[0];
+const summary = document.getElementById("summary");
 
 async function submitBill() {
     const bill = billInput.files[0];
@@ -44,6 +45,8 @@ async function submitBill() {
             }
             dropZone.style.display = "none";
             table.style.display = "flex";
+            summary.innerHTML = parsed["summary"];
+            summary.display = "flex";
         }
         else {
             alert("Upload failed.");
