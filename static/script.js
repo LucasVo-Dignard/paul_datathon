@@ -46,7 +46,7 @@ async function submitBill() {
             dropZone.style.display = "none";
             table.style.display = "flex";
             summary.innerHTML = parsed["summary"];
-            summary.display = "flex";
+            summary.style.display = "flex";
         }
         else {
             alert("Upload failed.");
